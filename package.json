@@ -45,7 +45,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "npm run build:clean && npm run build:types && npm run build:js",
-    "build:clean": "rm -r dist/* || true",
+    "build:clean": "rmdir /Q /S dist",
     "build:js": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
     "changelog": "auto-changelog",
